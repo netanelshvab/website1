@@ -27,7 +27,7 @@ def details(request, id):
     }
     return HttpResponse(template.render(context, request))
 
-def sell_prodact_page(request, id):
+def sell_product_page(request, id):
     product_profile = Product.objects.get(id=id)
     template = loader.get_template('sell_product.html')
     context = {
