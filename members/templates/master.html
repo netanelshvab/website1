@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'master.css' %}">
+  {% block title %}{% endblock %}
+</head>
+<body>
+  <div class="top-bar">
+    <a href="/" class="home-link">HOME</a>
+    <a href="/admin" class="log-in-link">LOG IN</a>
+  </div>
+  {% block content %}
+  {% endblock %}
+</body>
+</html>

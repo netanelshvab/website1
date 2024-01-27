@@ -1,0 +1,18 @@
+{% extends "master.html" %}
+
+{% block title %}
+  <title> Tennis Club - List of all members </title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'all_member_task.css' %}">
+{% endblock %}
+
+
+{% block content %}
+  <h1>Members</h1>
+  
+  <ul>
+    {% for x in mymembers %}
+      <li><a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

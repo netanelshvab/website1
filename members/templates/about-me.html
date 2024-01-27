@@ -1,0 +1,48 @@
+{% extends "master.html" %}
+
+{% block title %}
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Me - Full-Stack Developer</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'about-me.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    
+    <header>
+        <h1>About Me</h1>
+    </header>
+
+    <section class="about-me">
+        <img src="{% static 'pic/tree.jpg' %}" alt="Profile Picture" class="profile-picture">
+        <div class="bio">
+            <h2>[Your Name]</h2>
+            <p>
+                Hi, I'm a passionate full-stack developer based in [Your Location].
+                I specialize in creating dynamic and user-friendly web applications.
+                With a background in [Your Background], I bring a unique perspective to my work.
+            </p>
+            <p>
+                My skills include:
+                <ul>
+                    <li>Frontend development with HTML, CSS, and JavaScript.</li>
+                    <li>Backend development with [Your Backend Technology].</li>
+                    <li>Database design and management.</li>
+                    <li>Version control with Git.</li>
+                    <li>Building RESTful APIs.</li>
+                    <li>Testing and debugging.</li>
+                    <li>Continuous integration and deployment.</li>
+                </ul>
+            </p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h3>Let's Connect</h3>
+        <p>Feel free to contact me for collaborations, job opportunities, or just to say hello!</p>
+        <button class="button">Contact Me</button>
+    </section>
+
+{% endblock %}

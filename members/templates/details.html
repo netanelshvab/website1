@@ -1,0 +1,28 @@
+{% extends "master.html" %}
+
+{% block title %}
+  <title> Tennis Club - List of all members </title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'details.css' %}">
+{% endblock %}
+
+
+{% block content %}
+  <table border="1px">
+      <tr>
+        <th>ID</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Phone nummber</th>
+        <th>Joined date</th>
+      </tr>
+      <tr>
+        <td>{{mymember.ID}}</td>
+        <td>{{mymember.firstname}}</td>
+        <td>{{mymember.lastname}}</td>
+        <td>{{mymember.phoneNumber}}</td>
+        <td>{{mymember.joined_date}}</td>
+      </tr>
+  </table>
+  <p>Back to <a href="{% url 'members' %}">Members</a></p>
+{% endblock %}

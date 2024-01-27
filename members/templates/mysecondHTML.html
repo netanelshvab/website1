@@ -1,0 +1,29 @@
+{% extends "master.html" %}
+
+{% block title %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Stack Developer</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'WEBSITEhome.css' %}">
+{% endblock %}
+
+
+{% block content %}        
+    <header>
+        <h1>Welcome to the World of Full-Stack Development</h1>
+    </header>
+
+    <section class="about-me">
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm [Your Name], a passionate full-stack developer based in [Your Location].
+            With a love for coding and problem-solving, I create web applications that are both
+            functional and beautiful.
+        </p>
+    </section>
+
+    
+    <h3>Ready to build something amazing together?</h3>
+    <a href= "{% url 'about-me' %}"  button class="button">ABOUT ME</button>
+{% endblock %}
