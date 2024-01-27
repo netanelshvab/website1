@@ -8,7 +8,6 @@ urlpatterns = [
     path('home/about-me', views.about_me, name='about-me'),
     path('', RedirectView.as_view(url='/home/')),  # Redirects the root URL to '/home/'
     path('members/details/<int:id>', views.details, name='details'),
-    #path('product/<int:id>', views.sell_product_page, name='product'),
-    path('product/', views.sell_product_page, name='product'),
+    path('product/<int:id>', views.sell_product_page, name='product'),
 
 ]
