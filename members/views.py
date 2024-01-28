@@ -36,7 +36,7 @@ def sell_product_page(request, id):
     return HttpResponse(template.render(context, request))
 
 def all_product_page(request):
-    products = Product.objects.all()
+    products = Product.objects.all().values()
     template = loader.get_template('all_product_page.html')
     context = {
         'products': products,
