@@ -12,10 +12,10 @@
   <ul>
     {% for product in products %}
       <li>
-        <img src="{{ product.photo }}" alt="{{ product.name }}" width="500" height="600">
+        <img src="{{ product.photo_data }}" alt="{{ product.name }}" width="500" height="600">
         <h2>{{ product.name }}</h2>
         <p>{{ product.describe }}</p>
-        <p>{{ product.price }}</p>
+        <p>{{ product.price_1 }}</p>
         <a href="details/{{ product.id }}">See product</a>
       </li>
     {% endfor %}

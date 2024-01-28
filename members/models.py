@@ -15,7 +15,9 @@ class Product(models.Model):
     name = models.CharField(max_length=255)
     describe = models.CharField(max_length=255)
     photo = models.IntegerField(null=True)
-    price = models.DateField(null=True)
+    price = models.IntegerField(null=True)
+    photo_data = models.CharField(null=True)
+    price_1 = models.IntegerField(null=True)
 
     def __str__(self) -> str:
         return f"{self.name} {self.price}"
