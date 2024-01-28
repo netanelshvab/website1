@@ -34,3 +34,11 @@ def sell_product_page(request, id):
         'prodact_profile': product_profile,
     }
     return HttpResponse(template.render(context, request))
+
+def all_product_page(request):
+    products = Product.objects.all()
+    template = loader.get_template('all_product_page.html')
+    context = {
+        'products': products,
+    }
+    return HttpResponse(template.render(context, request))
