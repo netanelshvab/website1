@@ -31,7 +31,7 @@ def sell_product_page(request, id):
     product_profile = Product.objects.get(id=id)
     template = loader.get_template('sell_product.html')
     context = {
-        'prodact_profile': product_profile,
+        'product_profile': product_profile,
     }
     return HttpResponse(template.render(context, request))
 
