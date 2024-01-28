@@ -25,6 +25,13 @@ body {
     margin-right: auto; /* Push the link to the right */
 }
 
+.products-link {
+    color: #ffffff; /* White text color */
+    text-decoration: none;
+    margin-left: 10px; /* the small space from the left top*/
+    margin-right: auto; /* Push the link to the right */
+}
+
 
 .log-in-link {
     color: #ffffff; /* White text color */
